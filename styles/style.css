@@ -1,0 +1,448 @@
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 16px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/*-------------------------------------------------------*/
+body {
+   font-family: 'Raleway', sans-serif;
+   background: url('../media/background.jpg') 0 0/100% 250% no-repeat;
+}
+
+.line {
+   background-color: rgb(0, 174, 255);
+   height: 8%;
+}
+
+.content {
+   background: none;
+   position: relative;
+   min-height: 92%;
+}
+
+.content-left {
+   position: absolute;
+   width: 60%;
+   min-height: 100%;
+   left: 3%;
+   top: 20px;
+}
+
+.content-right {
+   position: absolute;
+   width: 32%;
+   min-height: 100%;
+   left: 65%;
+   top: 20px;
+}
+
+@media screen and (max-width:850px) {
+   body {
+      background: none;
+   }
+
+   .content {
+      background: url('../media/background.jpg') 0 0/100% 100% no-repeat;
+   }
+
+   .content-left {
+      position: static;
+      width: 100%;
+      padding-left: 3%;
+      padding-top: 20px;
+   }
+
+   .content-right {
+      position: static;
+      width: 100%;
+      padding-left: 3%;
+   }
+
+   .main-info>img {
+      margin-top: 15px;
+   }
+
+   .info {
+      margin-top: 15px;
+   }
+}
+
+.item-content {
+   padding-bottom: 50px;
+}
+
+.main-info {
+   height: 280px;
+}
+
+.main-info>img {
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   top: -35px;
+   transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -webkit-transition: all 1s ease-in-out;
+   -o-transition: all 1s ease-in-out;
+}
+
+.foto-open {
+   transform: scale(1.3);
+   -moz-transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+   -o-transform: scale(1.3);
+   transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -webkit-transition: all 1s ease-in-out;
+   -o-transition: all 1s ease-in-out;
+}
+
+.main-info>img:hover {
+   cursor: pointer;
+}
+
+.FIO {
+   font-size: 32px;
+   font-weight: bold;
+   padding-left: 250px;
+}
+
+.profession {
+   font-size: 24px;
+   font-weight: bold;
+   padding: 20px 0 0 250px;
+}
+
+.info {
+   position: absolute;
+   top: 200px;
+   font-size: 18px;
+}
+
+.icon-location {
+   height: 20px;
+   width: 20px;
+   margin-right: 18px;
+}
+
+.icon-age {
+   height: 20px;
+   width: 20px;
+   margin: 0 18px 0 100px;
+}
+
+.location {}
+
+.age {}
+
+.work-experience {}
+
+.title-item {
+   display: inline-block;
+   font-size: 28px;
+   font-weight: bold;
+   position: relative;
+   cursor: pointer;
+}
+
+.ico-title {
+   position: absolute;
+   width: 70px;
+   height: 50px;
+   top: -11px;
+   left: 0;
+}
+
+.title {
+   padding-left: 90px;
+}
+
+.title:hover {
+   color: rgb(121, 121, 209);
+   text-shadow: 1px 1px 10px rgb(168, 153, 153);
+   transition: all 0.15s ease-out;
+   -moz-transition: all 0.15s ease-out;
+   -webkit-transition: all 0.15s ease-out;
+   -o-transition: all 0.15s ease-out;
+}
+
+.information {
+   border-top: 2px solid black;
+   margin-top: 20px;
+   padding-top: 5px;
+   font-size: 20px;
+   line-height: 1.2;
+   text-shadow: 4px 4px 15px rgb(79, 79, 79);
+}
+
+.education {}
+
+.university {
+   font-weight: bold;
+}
+
+.university a {
+   color: rgb(0, 106, 255);
+}
+
+.university a:hover {
+   color: rgb(90, 90, 167);
+   text-shadow: none;
+}
+
+.direction {}
+
+.courses {}
+
+.courses-list {}
+
+.courses-list li::before {
+   content: '';
+   display: inline-block;
+   width: 8px;
+   height: 8px;
+   margin-right: 17px;
+   margin-bottom: 2px;
+   background-color: black;
+   border-radius: 50%;
+}
+
+.course {
+   text-shadow: none;
+   color: rgb(0, 136, 255);
+   font-weight: 600;
+}
+
+.course:hover {
+   color: rgb(121, 121, 209);
+}
+
+.hobby {}
+
+.about_me {}
+
+#ico-about {
+   position: absolute;
+   width: 100px;
+   height: 50px;
+   top: -11px;
+   left: -18px;
+}
+
+.contacts {}
+
+.email-info {}
+
+.contact-item {
+   padding: 5px 0;
+}
+
+.ico-contact {
+   width: 70px;
+   height: 40px;
+}
+
+#ico-contacts {
+   position: absolute;
+   width: 105px;
+   height: 50px;
+   top: -11px;
+   left: -18px;
+}
+
+.contact {
+   display: inline-block;
+   padding-top: 5px;
+}
+
+.tel-info {}
+
+.languages {}
+
+.language {}
+
+.eng {}
+
+.progress-lang {}
+
+.skills {}
+
+.skills-list {
+   padding-top: 10px;
+}
+
+.skills-list li>progress {
+   display: block;
+   margin-left: 25px;
+   margin-top: 5px;
+   border-radius: 4px 4px 4px 4px;
+   width: 95%;
+   height: 5px;
+   overflow: hidden;
+}
+
+.skills-list li>progress {
+   color: rgb(0, 191, 255);
+}
+
+.skills-list li>progress::-moz-progress-value {
+   background: rgb(0, 191, 255);
+}
+
+.skills-list li>progress::-webkit-progress-value {
+   background: rgb(0, 191, 255);
+}
+
+.skills-list li>progress::-ms-progress-value {
+   background: rgb(0, 191, 255);
+}
+
+.skills-list li::before {
+   content: '';
+   display: inline-block;
+   width: 8px;
+   height: 8px;
+   margin-right: 17px;
+   margin-bottom: 2px;
+   background-color: rgb(0, 145, 255);
+   border-radius: 50%;
+}
+
+.skill-title {
+   display: inline-block;
+}
+
+.progress-title {
+   text-align: right;
+}
+
+.qualities {}
+
+.quality-list {
+   padding-top: 10px;
+}
+
+.quality-list li::before {
+   content: '';
+   display: inline-block;
+   width: 8px;
+   height: 8px;
+   margin-right: 17px;
+   margin-bottom: 2px;
+   background-color: rgb(0, 145, 255);
+   border-radius: 50%;
+}
+
+.quality-list li {
+   margin-bottom: 5px;
+}
+
+.up {
+   display: inline-block;
+   position: fixed;
+   width: 50px;
+   height: 50px;
+   top: 92%;
+   border-radius: 50%;
+   background-color: rgb(118, 118, 118);
+   left: 50%;
+   opacity: 0.4;
+}
+
+.up img {
+   width: 50px;
+   height: 50px;
+}
+
+.up:hover {
+   background-color: beige;
+   transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -webkit-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+}
