@@ -1,5 +1,6 @@
 const buttonUp = document.querySelector('.up')
 const foto = document.querySelector('.main-info>img')
+const icons = document.querySelectorAll('.ico-title')
 
 foto.addEventListener('click', () => {
    foto.classList.toggle('foto-open')
@@ -45,7 +46,7 @@ class Accordion {
    shrink() {
       this.isClosing = true;
       const startHeight = `${this.el.offsetHeight}px`;
-      const endHeight = `${this.summary.offsetHeight}px`;
+      const endHeight = `${this.summary.offsetHeight + 10}px`;
 
       if (this.animation) {
          this.animation.cancel();
@@ -54,7 +55,7 @@ class Accordion {
       this.animation = this.el.animate({
          height: [startHeight, endHeight]
       }, {
-         duration: 400,
+         duration: 300,
          easing: 'ease-out'
       });
 
@@ -63,15 +64,15 @@ class Accordion {
    }
 
    open() {
-      this.el.style.height = `${this.el.offsetHeight}px`;
+      this.el.style.height = `${this.el.offsetHeight + 10}px`;
       this.el.open = true;
       window.requestAnimationFrame(() => this.expand());
    }
 
    expand() {
       this.isExpanding = true;
-      const startHeight = `${this.el.offsetHeight}px`;
-      const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight}px`;
+      const startHeight = `${this.el.offsetHeight + 10}px`;
+      const endHeight = `${this.summary.offsetHeight + this.content.offsetHeight + 20}px`;
 
       if (this.animation) {
          this.animation.cancel();
@@ -80,7 +81,7 @@ class Accordion {
       this.animation = this.el.animate({
          height: [startHeight, endHeight]
       }, {
-         duration: 400,
+         duration: 300,
          easing: 'ease-out'
       });
       this.animation.onfinish = () => this.onAnimationFinish(true);

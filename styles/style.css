@@ -154,11 +154,11 @@ body {
 }
 
 .item-content {
-   padding-bottom: 3.125em;
+   padding-bottom: 2.5em;
 }
 
 .main-info {
-   height: 17.5em;
+   height: 17em;
 }
 
 .main-info>img {
@@ -232,13 +232,14 @@ body {
    font-weight: bold;
    position: relative;
    cursor: pointer;
+   padding-top: 0.35em;
 }
 
 .ico-title {
    position: absolute;
    width: 2.5em;
    height: 1.785em;
-   top: -0.392em;
+   top: 0;
    left: 0;
 }
 
@@ -246,7 +247,7 @@ body {
    padding-left: 3.214em;
 }
 
-.title:hover {
+.title-item:hover {
    color: rgb(121, 121, 209);
    text-shadow: 1px 1px 10px rgb(168, 153, 153);
    transition: all 0.15s ease-out;
@@ -315,7 +316,7 @@ body {
    position: absolute;
    width: 3.571em;
    height: 1.785em;
-   top: -0.393em;
+   top: 0;
    left: -0.643em;
 }
 
@@ -336,7 +337,7 @@ body {
    position: absolute;
    width: 3.75em;
    height: 1.785em;
-   top: -0.393em;
+   top: -0.02em;
    left: -0.643em;
 }
 
