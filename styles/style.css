@@ -110,7 +110,7 @@ body {
    width: 60%;
    min-height: 100%;
    left: 3%;
-   top: 20px;
+   top: 1.25em;
 }
 
 .content-right {
@@ -118,12 +118,13 @@ body {
    width: 32%;
    min-height: 100%;
    left: 65%;
-   top: 20px;
+   top: 1.25em;
 }
 
 @media screen and (max-width:850px) {
    body {
       background: none;
+      font-size: 12px;
    }
 
    .content {
@@ -153,18 +154,18 @@ body {
 }
 
 .item-content {
-   padding-bottom: 50px;
+   padding-bottom: 3.125em;
 }
 
 .main-info {
-   height: 280px;
+   height: 17.5em;
 }
 
 .main-info>img {
    position: absolute;
-   width: 200px;
-   height: 200px;
-   top: -35px;
+   width: 12.5em;
+   height: 12.5em;
+   top: -2.185em;
    transition: all 1s ease-in-out;
    -moz-transition: all 1s ease-in-out;
    -webkit-transition: all 1s ease-in-out;
@@ -187,33 +188,33 @@ body {
 }
 
 .FIO {
-   font-size: 32px;
+   font-size: 2em;
    font-weight: bold;
-   padding-left: 250px;
+   padding-left: 7.812em;
 }
 
 .profession {
-   font-size: 24px;
+   font-size: 1.5em;
    font-weight: bold;
-   padding: 20px 0 0 250px;
+   padding: 1.25em 0 0 10.415em;
 }
 
 .info {
    position: absolute;
-   top: 200px;
-   font-size: 18px;
+   top: 11.111em;
+   font-size: 1.125em;
 }
 
 .icon-location {
-   height: 20px;
-   width: 20px;
-   margin-right: 18px;
+   height: 1.111em;
+   width: 1.111em;
+   margin-right: 1em;
 }
 
 .icon-age {
-   height: 20px;
-   width: 20px;
-   margin: 0 18px 0 100px;
+   height: 1.111em;
+   width: 1.111em;
+   margin: 0 1em 0 5.555em;
 }
 
 .location {}
@@ -224,7 +225,7 @@ body {
 
 .title-item {
    display: inline-block;
-   font-size: 28px;
+   font-size: 1.75em;
    font-weight: bold;
    position: relative;
    cursor: pointer;
@@ -232,14 +233,14 @@ body {
 
 .ico-title {
    position: absolute;
-   width: 70px;
-   height: 50px;
-   top: -11px;
+   width: 2.5em;
+   height: 1.785em;
+   top: -0.392em;
    left: 0;
 }
 
 .title {
-   padding-left: 90px;
+   padding-left: 3.214em;
 }
 
 .title:hover {
@@ -253,11 +254,11 @@ body {
 
 .information {
    border-top: 2px solid black;
-   margin-top: 20px;
-   padding-top: 5px;
-   font-size: 20px;
+   margin-top: 1em;
+   padding-top: 0.25em;
+   font-size: 1.25em;
    line-height: 1.2;
-   text-shadow: 4px 4px 15px rgb(79, 79, 79);
+   text-shadow: 0.5px 0.5px 15px rgb(79, 79, 79);
 }
 
 .education {}
@@ -284,10 +285,10 @@ body {
 .courses-list li::before {
    content: '';
    display: inline-block;
-   width: 8px;
-   height: 8px;
-   margin-right: 17px;
-   margin-bottom: 2px;
+   width: 0.4em;
+   height: 0.4em;
+   margin-right: 0.85em;
+   margin-bottom: 0.1em;
    background-color: black;
    border-radius: 50%;
 }
@@ -308,10 +309,10 @@ body {
 
 #ico-about {
    position: absolute;
-   width: 100px;
-   height: 50px;
-   top: -11px;
-   left: -18px;
+   width: 3.571em;
+   height: 1.785em;
+   top: -0.393em;
+   left: -0.643em;
 }
 
 .contacts {}
@@ -319,25 +320,25 @@ body {
 .email-info {}
 
 .contact-item {
-   padding: 5px 0;
+   padding: 0.25em 0;
 }
 
 .ico-contact {
-   width: 70px;
-   height: 40px;
+   width: 3.5em;
+   height: 2em;
 }
 
 #ico-contacts {
    position: absolute;
-   width: 105px;
-   height: 50px;
-   top: -11px;
-   left: -18px;
+   width: 3.75em;
+   height: 1.785em;
+   top: -0.393em;
+   left: -0.643em;
 }
 
 .contact {
    display: inline-block;
-   padding-top: 5px;
+   padding-top: 0.25em;
 }
 
 .tel-info {}
@@ -353,16 +354,16 @@ body {
 .skills {}
 
 .skills-list {
-   padding-top: 10px;
+   padding-top: 0.5em;
 }
 
 .skills-list li>progress {
    display: block;
-   margin-left: 25px;
-   margin-top: 5px;
-   border-radius: 4px 4px 4px 4px;
+   margin-left: 1.25em;
+   margin-top: 0.25em;
+   border-radius: 0.2em 0.2em 0.2em 0.2em;
    width: 95%;
-   height: 5px;
+   height: 0.25em;
    overflow: hidden;
 }
 
@@ -385,10 +386,10 @@ body {
 .skills-list li::before {
    content: '';
    display: inline-block;
-   width: 8px;
-   height: 8px;
-   margin-right: 17px;
-   margin-bottom: 2px;
+   width: 0.4em;
+   height: 0.4em;
+   margin-right: 0.85em;
+   margin-bottom: 0.1em;
    background-color: rgb(0, 145, 255);
    border-radius: 50%;
 }
@@ -404,22 +405,22 @@ body {
 .qualities {}
 
 .quality-list {
-   padding-top: 10px;
+   padding-top: 0.5em;
 }
 
 .quality-list li::before {
    content: '';
    display: inline-block;
-   width: 8px;
-   height: 8px;
-   margin-right: 17px;
-   margin-bottom: 2px;
+   width: 0.4em;
+   height: 0.4em;
+   margin-right: 0.85em;
+   margin-bottom: 0.1em;
    background-color: rgb(0, 145, 255);
    border-radius: 50%;
 }
 
 .quality-list li {
-   margin-bottom: 5px;
+   margin-bottom: 0.25em;
 }
 
 .up {
@@ -427,7 +428,7 @@ body {
    position: fixed;
    width: 50px;
    height: 50px;
-   top: 92%;
+   top: 90vh;
    border-radius: 50%;
    background-color: rgb(118, 118, 118);
    left: 50%;
